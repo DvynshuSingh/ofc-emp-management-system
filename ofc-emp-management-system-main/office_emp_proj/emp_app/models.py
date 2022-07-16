@@ -27,6 +27,7 @@ class Employee(models.Model):
     role = models.ForeignKey(Role, on_delete=models.CASCADE)
     phone = models.IntegerField(default=0)
     hire_date = models.DateField()
+    sex= models.CharField(max_length=1)
 
 
     def __str__(self):
